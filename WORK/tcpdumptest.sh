@@ -14,8 +14,10 @@ b1() {
 }
 
 
+# Capturing only 20 packets 
 c1() {
-    sudo tcpdump -i eth0 -w c1.txt
+    sudo tcpdump -i eth0 -w c3.txt -c 20 
+    sudo tcpdump -r c3.txt > c2read.txt
 }
 
 # execution
