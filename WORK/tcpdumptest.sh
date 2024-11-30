@@ -15,7 +15,9 @@ b1() {
 
 
 c1() {
-    tcpdump -i docker0 -w test.pcap
+    sudo tcpdump -i eth0 -w c1.txt
 }
 
 # execution
+b1
+c1
